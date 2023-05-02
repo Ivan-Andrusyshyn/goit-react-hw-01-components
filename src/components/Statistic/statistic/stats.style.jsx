@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const StatTitle = styled.h2`
   text-align: center;
-  color: gray;
+  color: #ffffff;
   margin-bottom: 20px;
   margin: 0;
 `;

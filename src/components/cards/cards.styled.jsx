@@ -8,5 +8,6 @@ const CardWrapper = styled.ul`
   flex-wrap: wrap;
   height: 100%;
   padding: 20px 0;
+  background-color: aqua;
 `;
 export { CardWrapper };

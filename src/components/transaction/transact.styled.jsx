@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 const Container = styled.table`
-  background-color: #808080b0;
   color: white;
   margin: 0 auto;
 `;
@@ -14,4 +13,7 @@ const Item = styled.th`
   background-color: palegreen;
   padding: 12px 0;
 `;
-export { Container, Item, List };
+const ContainWrapper = styled.div`
+  background-color: #ff000055;
+`;
+export { Container, Item, List, ContainWrapper };

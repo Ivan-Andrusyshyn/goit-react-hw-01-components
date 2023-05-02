@@ -1,10 +1,9 @@
-import FriendsData from "./friendinfo/friends.json";
 import { List } from "./friendslist.styled";
 import { ItemFriend } from "./list/listitem";
-const FriendsList = () => {
+const FriendsList = ({ dataFriends }) => {
   return (
     <List>
-      {FriendsData.map((el) => {
+      {dataFriends.map((el) => {
         return (
           <ItemFriend
             key={el.id}

@@ -6,7 +6,7 @@ const StatWrrapper = styled.div`
   border: 1px solid black;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  background-color: #80008073;
 `;
 const StatList = styled.ul`
   display: flex;
