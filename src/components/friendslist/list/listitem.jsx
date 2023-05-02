@@ -11,14 +11,14 @@ const ItemFriend = ({ avatar, id, name, isOnline }) => {
   );
 };
 ColorBg.prototype = {
-  red: PropTypes.string,
-  green: PropTypes.string,
+  red: PropTypes.string.isRequired,
+  green: PropTypes.string.isRequired,
 };
 ItemFriend.prototype = {
-  avatar: PropTypes.string,
-  id: PropTypes.number,
-  name: PropTypes.string,
-  isOnline: PropTypes.bool,
+  avatar: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
 
 export { ItemFriend };
