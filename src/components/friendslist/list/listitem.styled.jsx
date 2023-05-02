@@ -7,8 +7,12 @@ const Item = styled.li`
   align-items: center;
   width: 200px;
   height: 60px;
-  border: 1px solid gray;
+  border: 1px solid
+    ${(props) => {
+      return props.isOnlineColor;
+    }};
   padding: 5px 8px;
+  border-radius: 10px;
 `;
 const Online = styled.span`
   width: 15px;
