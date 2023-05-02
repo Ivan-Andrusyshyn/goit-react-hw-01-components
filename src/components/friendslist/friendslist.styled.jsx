@@ -7,7 +7,7 @@ const List = styled.ul`
   flex-wrap: wrap;
   gap: 10px;
   background-color: #ff00001c;
-  padding: 10px 0;
+  padding: 15px 0;
   margin: 0 auto;
 `;
 export { List };

@@ -15,5 +15,6 @@ const Item = styled.th`
 `;
 const ContainWrapper = styled.div`
   background-color: #ff000055;
+  padding: 15px 0;
 `;
 export { Container, Item, List, ContainWrapper };
