@@ -16,4 +16,5 @@ const FriendsList = ({ dataFriends }) => {
     </List>
   );
 };
+
 export { FriendsList };

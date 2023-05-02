@@ -5,6 +5,9 @@ const StatTitle = styled.h2`
   color: #ffffff;
   margin-bottom: 20px;
   margin: 0;
+  padding: 5px;
+  width: 490px;
+  background-color: #892be28a;
 `;
 
 const StatItem = styled.li`
@@ -23,6 +26,3 @@ const StatItem = styled.li`
   flex-direction: column;
 `;
 export { StatTitle, StatItem };
-// display: flex;
-// flex-direction: column;
-// align-items: center;
