@@ -51,14 +51,14 @@ const CardMain = ({
 const SocIndecate = (value) => {
   return value > 4000 ? ColorBg.green : ColorBg.yellow;
 };
-CardMain.prototype = {
+CardMain.propTypes = {
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.array.isRequired,
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   likes: PropTypes.number.isRequired,
   views: PropTypes.number.isRequired,
   followers: PropTypes.number.isRequired,
+  stats: PropTypes.object.isRequired,
 };
 export { CardMain };

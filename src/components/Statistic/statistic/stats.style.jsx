@@ -1,15 +1,5 @@
 import styled from "@emotion/styled";
 
-const StatTitle = styled.h2`
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 20px;
-  margin: 0;
-  padding: 5px;
-  width: 490px;
-  background-color: #892be28a;
-`;
-
 const StatItem = styled.li`
   justify-content: center;
   background-color: ${(prop) => {
@@ -25,4 +15,4 @@ const StatItem = styled.li`
   color: green;
   flex-direction: column;
 `;
-export { StatTitle, StatItem };
+export { StatItem };

@@ -1,9 +1,11 @@
-import { ProcentItem, Title } from "./statistic/stats";
-import { StatList, StatWrrapper } from "./static.styled";
-const Statistic = ({ dataStatic }) => {
+import { ProcentItem } from "./statistic/stats";
+import { StatList, StatWrrapper, StatTitle } from "./static.styled";
+import PropTypes from "prop-types";
+
+const Statistic = ({ dataStatic, title }) => {
   return (
     <StatWrrapper>
-      <Title title={"Upload stats"} />
+      {title && <StatTitle>{title}</StatTitle>}
       <StatList>
         {dataStatic.map(({ id, percentage, label }) => {
           return <ProcentItem key={id} percentage={percentage} label={label} />;
@@ -11,5 +13,12 @@ const Statistic = ({ dataStatic }) => {
       </StatList>
     </StatWrrapper>
   );
+};
+Statistic.propTypes = {
+  dataStatic: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
 export { Statistic };

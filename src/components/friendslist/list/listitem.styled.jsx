@@ -30,4 +30,5 @@ const NameFriend = styled.p`
   font-size: 16px;
   color: black;
 `;
+
 export { Item, Online, Avatar, NameFriend };

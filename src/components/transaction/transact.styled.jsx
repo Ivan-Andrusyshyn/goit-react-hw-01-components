@@ -13,8 +13,5 @@ const Item = styled.th`
   background-color: palegreen;
   padding: 12px 0;
 `;
-const ContainWrapper = styled.div`
-  background-color: #ff000055;
-  padding: 15px 0;
-`;
-export { Container, Item, List, ContainWrapper };
+
+export { Container, Item, List };

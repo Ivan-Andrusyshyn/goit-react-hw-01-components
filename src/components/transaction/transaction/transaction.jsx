@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { List, Item } from "./transact.styled";
 import { ColorBg } from "components/root/style";
-const TransactionItem = ({ id, type, amount, currency }) => {
+const TransactionItem = ({ type, amount, currency }) => {
   return (
-    <List ColorBg={MasterColorBg(type)} key={id}>
+    <List ColorBg={MasterColorBg(type)}>
       <Item>{type}</Item>
       <Item>{amount}</Item>
       <Item>{currency}</Item>
@@ -17,10 +17,9 @@ const MasterColorBg = (type) => {
     ? ColorBg.red
     : ColorBg.green;
 };
-TransactionItem.prototype = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  amount: PropTypes.number,
-  currency: PropTypes.string,
+TransactionItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };
 export { TransactionItem };

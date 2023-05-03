@@ -9,6 +9,15 @@ const StatWrrapper = styled.div`
   padding: 15px 0;
   background-color: #80008073;
 `;
+const StatTitle = styled.h2`
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin: 0;
+  padding: 5px;
+  width: 490px;
+  background-color: #892be28a;
+`;
 const StatList = styled.ul`
   display: flex;
   align-items: center;
@@ -17,4 +26,4 @@ const StatList = styled.ul`
   margin-top: 0;
   margin-bottom: 0;
 `;
-export { StatWrrapper, StatList };
+export { StatWrrapper, StatList, StatTitle };
