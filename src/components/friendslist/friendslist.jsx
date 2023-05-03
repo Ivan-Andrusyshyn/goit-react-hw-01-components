@@ -22,6 +22,9 @@ FriendsList.propTypes = {
   dataFriends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      name: PropTypes.string.isRequired,
     })
   ),
 };
